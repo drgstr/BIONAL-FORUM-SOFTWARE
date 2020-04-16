@@ -1,0 +1,14 @@
+{
+    "sql_server_address": "sql208.epizy.com",
+    "sql_username": "epiz_24803636",
+    "sql_password": "O2yUMH73IPcr",
+    "sql_database_name": "epiz_24803636_van",
+    "min_password_length": 6,
+    "require_email_verification": false,
+    "force_ssl": false,
+    "site_name": "BIONAL",
+    "site_timezone": "Europe\/Skopje",
+    "items_per_page": 15,
+    "theme": "twilight",
+    "show_eastereggs": false
+}
