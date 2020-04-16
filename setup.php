@@ -14,7 +14,7 @@
 			<hr /><br />
 			<h2>Welcome to BIONAL!</h2><br />
 			<br />
-			This setup script will help you configure Agora for the first time so you can begin using it.<br />
+			This setup script will help you configure BIONAL for the first time so you can begin using it.<br />
 			However, first we need to make sure you understand that this software is licensed under the GNU Affero General Public License.<br />
 			<br />
 			<textarea class="license" spellcheck="false" readonly>
@@ -88,7 +88,7 @@ EOT;
 		else
 		{
 			$issue = true;
-			addToBody(error("No. mysqli extension must be installed for Agora to work.<br /><br />", true));
+			addToBody(error("No. mysqli extension must be installed for BIONAL to work.<br /><br />", true));
 			addToBody("Hint: Try installing the php-mysql package for your OS.<br /><br />");
 		}
 
@@ -98,7 +98,7 @@ EOT;
 		else
 		{
 			$issue = true;
-			addToBody(error("No. json extension must be installed for Agora to work.<br /><br />", true));
+			addToBody(error("No. json extension must be installed for BIONAL to work.<br /><br />", true));
 			addToBody("Hint: Try installing the php-json package for your OS.<br /><br />");
 		}
 
@@ -108,7 +108,7 @@ EOT;
 		else
 		{
 			$issue = true;
-			addToBody(error("No. mbstring extension must be installed for Agora to work.<br />", true));
+			addToBody(error("No. mbstring extension must be installed for BIONAL to work.<br />", true));
 			addToBody("Hint: Try installing the php-mbstring package for your OS.<br /><br />");
 		}
 
@@ -135,9 +135,9 @@ EOT;
 		if(!$issue)
 		{
 			if($problem)
-				addToBody("Agora is probably compatible with this server. You should check the errors above to see if you can improve at all.");
+				addToBody("BIONAL is probably compatible with this server. You should check the errors above to see if you can improve at all.");
 			else
-				addToBody("Agora is compatible with this server.");
+				addToBody("BIONAL is compatible with this server.");
 
 			$form = <<<EOT
 			<br />
@@ -486,7 +486,7 @@ EOT;
 					chmod(".", 0775);
 
 					if(mkdir("./data") === false)
-						finishPage(error("Fatal error: Unable to create data directory. Make sure the directory Agora is installed in is writable."));
+						finishPage(error("Fatal error: Unable to create data directory. Make sure the directory BIONAL is installed in is writable."));
 				}
 
 				chmod("./data", 0775);
